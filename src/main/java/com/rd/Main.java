@@ -7,13 +7,7 @@ public class Main {
         PhoneBrand phoneBrand = PhoneBrand.getInstance();
         phoneBrand.managePhoneBrand();
 
-        Phone phone = new Phone.Builder()
-                .setBrand("Iphone")
-                .setModel("14 Pro Max")
-                .setRam(8)
-                .setScreenSize(6.4)
-                .setColor("White")
-                .build();
+        Phone phone = Phone.managePhone("Iphone","14 Pro",8,6.4 ,"White");
 
         System.out.println(phone);
     }

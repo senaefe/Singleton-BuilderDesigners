@@ -62,6 +62,17 @@ public class Phone {
                 ", color='" + color + '\'' +
                 '}';
     }
+
+    public static Phone managePhone (String brand, String model, int ram, double screenSize, String color){
+        return new Builder()
+                .setBrand(brand)
+                .setModel(model)
+                .setRam(ram)
+                .setScreenSize(screenSize)
+                .setColor(color)
+                .build();
+
+    }
 }
 
 
